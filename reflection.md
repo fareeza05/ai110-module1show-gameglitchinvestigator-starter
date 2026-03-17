@@ -51,12 +51,20 @@ Yes, AI particularly helped to speed up the process of creating specific test ca
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+I would tell them to think of Streamlit as a script that reruns everything from top to bottom every single time someone clicks a button or moves a slider, effectively forgetting everything that happened during a prior run. However, for the cases wherein we want to prevent the app from resetting to 0 every single time, Session State acts like a shared notebook for important data so after resetting the script can read this session state and pick up where it left off during the next run.
 
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+One major thing I learned was how to use the agent mode effectively in Copilot. Before this, I would've probably only gone as far as to ask AI to analyze my code and then go line-by-line to implement fixes myself. But, now I think it has been valuable to learn how to delegate that and focus on really understanding the code diffs once agent mode has ran to make the proper judgement calls and develop a better instinct for analyzing refactored code as a developer.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+I would like to try and be more organized and thoughtful while prompting. For example, I think I could have done a better job at starting a new chat for each bug and compartmentalizing the chats so Copilot could focus on one thing at a time. This time around, because I was so focused on learning I did not prompt in the most clear and efficient way.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+I think it fostered more trust in AI's analysis of the code, and prompted me to have more back and forth conversations where I could truly be inquisitive about this new codebase and trust Copilot to explain all of the nuances to me. 
