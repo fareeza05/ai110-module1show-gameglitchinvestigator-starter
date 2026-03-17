@@ -25,10 +25,9 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
 The purpose of the game is to provide a number-guessing experience where the player attempts to guess a randomly generated secret number within a limited number of attempts. The game includes hints to guide the player, such as "Go Higher" or "Go Lower," based on their guesses. It also allows players to select difficulty levels, which adjust the range of numbers and the number of attempts allowed.
 
-- [ ] Detail which bugs you found.
+**Bugs:**
 
 1. Inconsistent Hint Logic: The hints provided were sometimes incorrect due to alternating between string and integer comparisons for the secret number.
 1. Contradictory Hints for the Same Input: The same guess could produce different hints depending on the attempt number.
@@ -36,7 +35,7 @@ The purpose of the game is to provide a number-guessing experience where the pla
 1. Premature "Out of Attempts!" Message: The game ended one attempt too early, displaying "Out of attempts!" with one attempt still remaining.
 1. Incorrect Scoring Logic: The scoring system deducted points incorrectly for wins, awarding only 90 points for a win on the first attempt instead of 100.
 
-- [ ] Explain what fixes you applied.
+**Fixes**
 1. Inconsistent Hint Logic: Removed the alternating logic for the secret number and ensured it is always treated as an integer.
 1. Contradictory Hints for the Same Input: Centralized the hint logic in the check_guess function to ensure consistent behavior.
 1. New Game Button Did Not Reset State: Reset the game state variables (status, history, etc.) when the "New Game" button is clicked.
